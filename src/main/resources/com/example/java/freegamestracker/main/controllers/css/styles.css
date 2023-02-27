@@ -1,0 +1,20 @@
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+.button:hover {
+    background-color: #FFD700;
+    color: white;
+}
+.root {
+    -fx-background-color: black;
+    -fx-background:black;
+}

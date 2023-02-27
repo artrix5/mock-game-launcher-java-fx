@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.freegamestracker.GameDetailsController">
+    <left>
+        <fx:include source="menu.fxml" />
+    </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ScrollPane fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <AnchorPane layoutX="47.0" layoutY="14.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="402.0" layoutY="17.0" text="TITLE" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <HBox fx:id="hbox" layoutX="8.0" layoutY="50.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+                        <TabPane fx:id="tabPane" layoutX="29.0" layoutY="350.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="350.0">
+                          <tabs>
+                            <Tab text="DESCRIPTION">
+                              <content>
+                                <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" style="-fx-background-color: black;">
+                                       <children>
+                                          <Text fx:id="gameDescription" fill="WHITE" layoutX="511.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="1067.89453125" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Text>
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="MINIMUM REQUIREMENTS">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: yellow;">
+                                       <children>
+                                          <Text fx:id="gameMinimumRequirements" layoutX="100.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="1079.13671875" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </center>
+
+
+</BorderPane>
