@@ -1,4 +1,7 @@
 # FreeGamesTracker
+
+<u>Work in progress</u>
+
 A simple JavaFX application that fetches an API and displays information about some free games. The application GUI is made to resemble a game launcher, but for obvious reasons you can't launch games from this program as it's supposed to be a simple showcase. I also made sure that the program is resizable and responsive.
 Keep in mind the program may or may not work based on the availability of the API. 
 <pre>Programs used: InteliJ IDEA Ultimate, Scene Builder</pre>
