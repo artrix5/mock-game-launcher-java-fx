@@ -1,4 +1,4 @@
-# Game Tracker
+# Mock Game Launcher - JavaFX Application
 
 This JavaFX application serves as a mock game launcher, fetching data from a publicly available API to display details about free games. The interface replicates the look and feel of a game launcher, providing an intuitive and engaging experience. While it doesn’t launch games, this mock launcher showcases JavaFX and API integration skills effectively. The application is fully resizable and responsive, ensuring adaptability across different screen sizes. Note that the functionality may depend on the availability of the API used for demonstration purposes.
 
